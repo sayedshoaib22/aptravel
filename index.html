@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionHub – Premium Clothing E-commerce</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/892/892458.png" type="image/png">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            'fade-in': {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            }
+          },
+          animation: {
+            'fade-in': 'fade-in 0.3s ease-in'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white min-h-screen text-gray-800 antialiased">
+
+  <!-- Customer Website Only - NO ADMIN UI HERE -->
+  <div id="root"></div>
+
+  <!-- Scripts in correct order -->
+  <!-- 1. OTP System (must load first) -->
+  <script src="js/otp.js"></script>
+
+  <!-- 2. Data and Constants -->
+  <script src="js/data.js"></script>
+
+  <!-- 3. Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <!-- 4. Backend (Firebase integration) -->
+  <script src="js/backend.js"></script>
+
+  <!-- 5. Main Application Logic -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
