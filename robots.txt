@@ -1,5 +1,3 @@
-
-    User-agent: *
-    Allow: /
-    Sitemap: https://aptravelsandcargo.com/sitemap.xml
-
+User-agent: *
+Allow: /
+Sitemap: https://aptravelsandcargo.com/sitemap.xml
